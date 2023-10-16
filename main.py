@@ -25,3 +25,5 @@ plt.legend()
 
 # Showing the plot
 # plt.show()
+
+plt.savefig('barchart.png')
