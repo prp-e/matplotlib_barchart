@@ -9,7 +9,10 @@ data = {
     "gpt-j-6B" : {"T" : 93, "Q" : 45, "R" : 40, "P" : 5, "C" : 25}, 
     "llama 7B" : {"T" : 95, "Q" : 90, "R" : 80, "P" : 0.1, "C" : 70},
     "llama-2 7B" : {"T" : 100, "Q" : 93, "R" : 85, "P" : 0.1, "C" : 80}, 
-
+    "gpt-neox-20B" : {"T" : 100, "Q" : 93, "R" : 85, "P" : 0.1, "C" : 80},
+    "StableLM 3B" : {"T" : 100, "Q" : 93, "R" : 85, "P" : 0.1, "C" : 80},
+    "Phi 1.5B" : {"T" : 100, "Q" : 93, "R" : 85, "P" : 0.1, "C" : 80},
+    "Mistral 7B" : {"T" : 100, "Q" : 93, "R" : 85, "P" : 0.1, "C" : 80},
     
 }
 
@@ -23,14 +26,14 @@ C_values = [data[label]["C"] for label in labels]
 
 # Setting the positions and width for the bars
 position = list(range(len(labels)))
-width = 0.5
+width = 0.1
 
 # Plotting the bars
-plt.bar([p - width/5 for p in position], T_values, width=width, label='T')
-plt.bar([p - width/5 for p in position], Q_values, width=width, label='Q')
-plt.bar([p - width/5 for p in position], R_values, width=width, label='R')
-plt.bar([p - width/5 for p in position], P_values, width=width, label='P')
-plt.bar([p + width/5 for p in position], C_values, width=width, label='C')
+plt.bar([p - width/10 for p in position], T_values, width=width, label='T')
+plt.bar([p - width/10 for p in position], Q_values, width=width, label='Q')
+plt.bar([p - width/10 for p in position], R_values, width=width, label='R')
+plt.bar([p - width/10 for p in position], P_values, width=width, label='P')
+plt.bar([p + width/10 for p in position], C_values, width=width, label='C')
 
 # Adding labels and title
 plt.xlabel('Data')
