@@ -24,4 +24,4 @@ plt.xticks(position, labels)
 plt.legend()
 
 # Showing the plot
-plt.show()
+# plt.show()
