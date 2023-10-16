@@ -35,7 +35,7 @@ plt.bar([p for p in position], C_values, width=width, label='C')
 # Adding labels and title
 plt.xlabel('Models')
 plt.ylabel('Values')
-plt.title('Bar Chart for Various Models')
+plt.title('LLMS Comparison')
 plt.xticks(position, labels, rotation=45)
 plt.legend()
 
